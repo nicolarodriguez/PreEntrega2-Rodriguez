@@ -1,6 +1,10 @@
+.body{
+    background-color: whitesmoke;
+}
+
 h1{
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Arial, Helvetica, sans-serif';
     font-weight: bold;
 }
 
@@ -9,13 +13,13 @@ h1{
     justify-content: space-between;
     flex-wrap: wrap;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Arial, Helvetica, sans-serif';
     gap: 1.875rem;
 }
 
 .card-container{
-    width: 200px;
-    height: 300px;
+    width: 250px;
+    height: 350px;
     border: 1px solid black;
     justify-content: baseline;
     padding: 16px;
@@ -24,6 +28,7 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    background-color: white;
 }
 .card-container img{
     width: 100px;
@@ -31,11 +36,16 @@ h1{
     margin-top: 10px;
 }
 .card-container h3{
+    font-family: 'Arial, Helvetica, sans-serif';
     justify-content: baseline;
     margin: 8px 0;
 }
 .card-container p{
     margin: 8px 0;
+}
+.card-container button:hover{
+    background-color: skyblue;
+    color: white;
 }
 
 #secction-carrito{
@@ -45,6 +55,7 @@ h1{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     gap: 1.875rem;
+    object-fit: cover;
 }
 #carrito{
     display: flex;
@@ -55,9 +66,46 @@ h1{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     gap: 1.875rem;
+    background-color: white;
 }
 #carrito button{
     display: flex;
     height: 20px;
     width: auto;
+}
+#carrito button:hover{
+    background-color: skyblue;
+    color: white;
+}
+.cart-container{
+    border: 1px solid black;
+    width: 500px;
+    height: auto;
+}
+.cart-container h3{
+    overflow: hidden;
+}
+
+.cart-container button{
+    display: flex;
+    justify-content: baseline;
+    margin-top: auto;
+    align-self: stretch;
+}
+.cart-container img{
+    width: 250px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.finalizar-compra{
+    position: static;
+    top: 10px;
+    right: 10px;
+    color: black;
+}
+
+.finalizar-compra:hover{
+    background-color: skyblue;
+    color: white;
 }
